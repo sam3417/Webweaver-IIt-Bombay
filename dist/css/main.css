@@ -8,7 +8,18 @@
 
 .home {
   height: 100vh;
-  background: black;
+  background-color: black;
+  background: url("../assets/bg-home.png") center center/cover;
+}
+
+.home::after {
+  content: '';
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .home__header {
@@ -101,5 +112,26 @@
 .home__header__right__button:hover {
   background: white;
   color: black;
+}
+
+.home__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+.home__body-text-main {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 4rem;
+  width: 40%;
 }
 /*# sourceMappingURL=main.css.map */
